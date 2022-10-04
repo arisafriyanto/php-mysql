@@ -11,4 +11,5 @@ SQL;
 
 $connection->exec($sql);
 
+// close connection
 $connection = null;

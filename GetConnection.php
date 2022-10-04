@@ -6,7 +6,7 @@ function getConnection(): PDO
     $port = 3306;
     $database = "belajar_php_database";
     $username = "root";
-    $password = "";
+    $password = "afriyan";
 
     return new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
 }

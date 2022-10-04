@@ -4,7 +4,7 @@ $host = "localhost";
 $port = 3306;
 $database = "belajar_php_database";
 $username = "root";
-$password = "";
+$password = "afriyan";
 
 try {
     $connection = new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
@@ -12,6 +12,6 @@ try {
 
     // menutup koneksi
     $connection = null;
-}catch (PDOException $exception){
+} catch (PDOException $exception) {
     echo "Gagal terkoneksi ke database MySQL : " . $exception->getMessage() . PHP_EOL;
 }
